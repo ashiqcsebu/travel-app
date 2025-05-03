@@ -20,7 +20,7 @@ export default function FlightSearchSection() {
     <div>
       <div className="relative z-20 px-4 -mt-16">
         <div className="max-w-6xl mx-auto relative">
-        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-30">
+          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-30">
             <div className="flex space-x-4 rounded-xl">
               {[
                 { icon: <FaPlane />, label: "Flights", active: true },
@@ -45,9 +45,9 @@ export default function FlightSearchSection() {
           </div>
 
           {/* Search Form Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-2  pt-10">
+          <div className="bg-white rounded-2xl shadow-xl p-2 pt-10 ">
             {/* Trip Type Tabs */}
-            <div className="flex space-x-6 border-b border-gray-200 mb-6 md:text-base text-sm">
+            <div className="flex space-x-6 border-b border-gray-200 mb-6 md:text-base text-sm lg:px-12">
               <button className="flex items-center text-cyan-500 font-semibold border-b-2 border-cyan-500 pb-2">
                 <FaPlaneDeparture className="mr-2" />
                 One Way
@@ -62,11 +62,12 @@ export default function FlightSearchSection() {
               </button>
             </div>
 
-            {/* Input Row */}
-            <div className="flex flex-wrap gap-2 ">
-              <div className="relative flex gap-2">
+            {/* Input Row - Updated for desktop spacing */}
+            <div className="flex flex-col md:flex-row gap-2 md:gap-2 lg:px-12">
+              {/* From/To with Swap - Always horizontal */}
+              <div className="flex flex-row gap-2 relative">
                 {/* From */}
-                <div className="flex flex-col justify-center bg-white relative px-4 border rounded-xl shadow-md w-56">
+                <div className="flex flex-col justify-center bg-white relative px-4 border rounded-xl shadow-md w-full md:w-56">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
                     <FaPlaneDeparture className="text-xs" />
                     <span>From</span>
@@ -84,7 +85,7 @@ export default function FlightSearchSection() {
                 </div>
 
                 {/* To */}
-                <div className="flex flex-col relative justify-center bg-white  px-4 border rounded-xl shadow-md w-56">
+                <div className="flex flex-col justify-center bg-white relative px-4 border rounded-xl shadow-md w-full md:w-56">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
                     <FaPlaneArrival className="text-xs" />
                     <span>To</span>
@@ -102,42 +103,47 @@ export default function FlightSearchSection() {
                 </div>
 
                 {/* Swap Icon */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white  rounded-full text-black border border-gray-300 z-10">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full text-black border border-gray-300 z-10">
                   <FaExchangeAlt className="text-lg text-black" />
                 </div>
               </div>
 
-              <div className="relative border rounded-xl px-4 pt-5 pb-3 w-56">
-                <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
-                  <IoCalendarNumberSharp className="text-xs" />
-                  <span>Departure Date</span>
-                </label>
-                <div className="text-sm font-semibold">12 March, 2025</div>
-                <div className="text-sm text-gray-600">Thursday</div>
-              </div>
+              {/* Other Fields - Tight desktop layout */}
+              <div className="flex flex-col sm:flex-row gap-2 w-full md:flex-nowrap md:w-auto ">
+                {/* Departure Date */}
+                <div className="relative border  rounded-xl px-4 pt-5 pb-3 w-full sm:w-56 md:w-48">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
+                    <IoCalendarNumberSharp className="text-xs" />
+                    <span>Departure Date</span>
+                  </label>
+                  <div className="text-sm font-semibold">12 March, 2025</div>
+                  <div className="text-sm text-gray-600">Thursday</div>
+                </div>
 
-              {/* Traveler */}
-              <div className="relative border rounded-xl px-4 pt-5 pb-3 w-48">
-                <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
-                  <FaPersonWalkingLuggage className="text-xs" />
-                  <span>Traveler</span>
-                </label>
-                <div className="text-md font-semibold">01</div>
-                <div className="text-sm text-gray-600">Traveler</div>
-              </div>
+                {/* Traveler */}
+                <div className="relative border rounded-xl px-4 pt-5 pb-3 w-full sm:w-48 md:w-40">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
+                    <FaPersonWalkingLuggage className="text-xs" />
+                    <span>Traveler</span>
+                  </label>
+                  <div className="text-md font-semibold">01</div>
+                  <div className="text-sm text-gray-600">Traveler</div>
+                </div>
 
-              {/* Class */}
-              <div className="relative border rounded-xl px-4 pt-5 pb-3 w-42">
-                <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
-                  <FaChair className="text-xs" />
-                  <span>Class</span>
-                </label>
-                <div className="text-lg font-semibold">Premium Economy</div>
+                {/* Class */}
+                <div className="relative border rounded-xl px-4 pt-5 pb-3 w-full sm:w-56 md:w-48">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-xs text-gray-500 flex items-center space-x-1">
+                    <FaChair className="text-xs" />
+                    <span>Class</span>
+                  </label>
+                  <div className="text-lg font-semibold">Premium Economy</div>
+                </div>
               </div>
             </div>
+
             {/* Search Button */}
             <div className="flex justify-center mt-2">
-              <button className="bg-[#00A8CC] text-sm  my-2 hover:bg-cyan-600 transition text-white px-6 py-2 rounded-full flex items-center justify-center space-x-2">
+              <button className="bg-[#00A8CC] text-sm my-2 hover:bg-cyan-600 transition text-white px-6 py-2 rounded-full flex items-center justify-center space-x-2">
                 <span>SEARCH FLIGHT</span>
                 <LuPlane />
               </button>

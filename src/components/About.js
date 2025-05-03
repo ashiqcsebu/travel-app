@@ -7,7 +7,7 @@ const AboutSection = () => {
     <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full max-w-6xl mx-auto">
         {/* Left Column - Images */}
-        <div className="w-full lg:w-1/2 order-2 lg:order-1">
+        <div className="w-full lg:w-1/2 order-1 lg:order-1">
           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[678px] max-w-[615px] mx-auto">
             <div className="absolute w-[79%] h-[70%] sm:h-[80%] md:h-[88%] overflow-hidden">
               <img
@@ -41,7 +41,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right Column - Content */}
-        <div className="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/2 order-2 lg:order-2 mb-8 lg:mb-0">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">Why we are</h1>
           <p className="text-base sm:text-lg text-gray-600 mb-3 sm:mb-4">
             We are a passionate team of digital marketing enthusiasts dedicated

@@ -16,39 +16,33 @@ function Footer() {
   return (
     <footer className="bg-[#041E42] text-white w-full">
       {/* Certifications Section - Top and Centered */}
-      <div
-        className="text-center py-4 "
-        style={{
-          paddingLeft: "300px",
-          paddingRight: "300px",
-        }}
-      >
+      <div className="text-center py-4 px-4 sm:px-6 lg:px-12">
         <h3 className="text-3xl font-bold pt-4">Our Certifications</h3>
         <div className="flex justify-center flex-wrap gap-6 mt-4">
           <img
             src={img1}
             alt="Certification 1"
-            className="w-28 h-24 object-contain"
+            className="w-28 h-24 object-contain sm:w-32 md:w-40 lg:w-44"
           />
           <img
             src={img4}
             alt="Certification 4"
-            className="w-28 h-24 object-contain"
+            className="w-28 h-24 object-contain sm:w-32 md:w-40 lg:w-44"
           />
           <img
             src={img2}
             alt="Certification 2"
-            className="w-28 h-24 object-contain"
+            className="w-28 h-24 object-contain sm:w-32 md:w-40 lg:w-44"
           />
           <img
             src={img3}
             alt="Certification 3"
-            className="w-28 h-24 object-contain"
+            className="w-28 h-24 object-contain sm:w-32 md:w-40 lg:w-44"
           />
           <img
             src={img4}
             alt="Certification 4"
-            className="w-28 h-24 object-contain"
+            className="w-28 h-24 object-contain sm:w-32 md:w-40 lg:w-44"
           />
         </div>
       </div>
@@ -154,8 +148,8 @@ function Footer() {
             <div className="col-span-2 sm:col-span-1">
               <h3 className="text-lg font-semibold">Head Office</h3>
               <p className="mt-4 text-gray-400">
-                Unit# 09, Building, Shop# 272, Shouq Al Aharaj, 42
-                Street# 850, Doha, Qatar
+                Unit# 09, Building, Shop# 272, Shouq Al Aharaj, 42 Street# 850,
+                Doha, Qatar
               </p>
               <p className="mt-2 text-gray-400 flex items-center space-x-2">
                 <FaPhoneAlt className="text-[#00A8CC]" />

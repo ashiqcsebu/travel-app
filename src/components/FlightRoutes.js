@@ -166,26 +166,28 @@ const TopRoutesSection = () => {
             activeTab === "Domestic" ? "border-blue-500" : "border-blue-500"
           }`}
         >
-          <button
-            onClick={() => setActiveTab("Domestic")}
-            className={`px-2 sm:px-4 py-1 sm:py-2  sm:text-sm lg:text-base w-20 sm:w-24 md:w-28 text-center ${
-              activeTab === "Domestic"
-                ? "bg-blue-500 text-white"
-                : "bg-white text-gray-600 hover:bg-gray-100"
-            }`}
-          >
-            Domestic
-          </button>
-          <button
-            onClick={() => setActiveTab("International")}
-            className={`px-2  sm:px-4 py-1 sm:py-2  sm:text-sm lg:text-base w-20 sm:w-24 md:w-28 text-center ${
-              activeTab === "International"
-                ? "bg-blue-500 text-white"
-                : "bg-white text-gray-600 hover:bg-gray-100"
-            }`}
-          >
-            International
-          </button>
+         <button
+  onClick={() => setActiveTab("Domestic")}
+  className={`px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base w-auto min-w-[120px] md:w-32 text-center ${
+    activeTab === "Domestic"
+      ? "bg-blue-500 text-white"
+      : "bg-white text-gray-600 hover:bg-gray-100"
+  }`}
+>
+  Domestic
+</button>
+
+<button
+  onClick={() => setActiveTab("International")}
+  className={`px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base w-auto min-w-[120px] md:w-32 text-center ${
+    activeTab === "International"
+      ? "bg-blue-500 text-white"
+      : "bg-white text-gray-600 hover:bg-gray-100"
+  }`}
+>
+  International
+</button>
+
         </div>
       </div>
 
