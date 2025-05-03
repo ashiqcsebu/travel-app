@@ -1,14 +1,20 @@
-import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+
+import Newsletter from "./components/Newsletter";
+import Routes from "./components/Routes";
+
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div class=" ">
-          <div>01</div>
-          <div>02</div>
-        </div>
-      </header>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Newsletter />
+        <Routes />
+      </main>
+      <Footer />
     </div>
   );
 }
