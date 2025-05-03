@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 
 import Newsletter from "./components/Newsletter";
-import Routes from "./components/Routes";
+import Routes from "./components/FlightRoutes";
 
 import Footer from "./components/Footer";
 

@@ -156,7 +156,7 @@ const TopRoutesSection = () => {
   ];
 
   return (
-    <div className="p-6 bg-white mt-16 rounded-lg shadow-sm max-w-6xl mx-auto">
+    <div className="p-6 bg-white my-16 rounded-lg shadow-sm max-w-6xl mx-auto">
       <h1 className="text-5xl text-center font-bold text-gray-800 mb-4">
         Top Domestic & International Routes
       </h1>

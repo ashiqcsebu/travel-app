@@ -2,16 +2,15 @@ import React from "react";
 import { FaMobileAlt } from "react-icons/fa";
 import { MdOutlineTrain, MdOutlineSupportAgent } from "react-icons/md";
 import { IoMdWifi } from "react-icons/io";
-import heroImage from "../asset/p1.jpg";
+import cardImage from "../asset/p1.jpg";
 
-// ✅ Declare ServiceCard only ONCE
 const ServiceCard = ({ title, description, icon, hasImage }) => {
   return (
     <div className="relative rounded-xl shadow-md overflow-hidden w-full h-full flex flex-col">
       {hasImage && (
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${cardImage})` }}
         >
           <div className="absolute inset-0 bg-black/30 z-0"></div>
         </div>
