@@ -172,7 +172,7 @@ function Footer() {
         <div className="mt-2 border-t border-gray-700 bg-[#041E42] flex items-center justify-between py-2 ">
           {/* Copyright Text */}
           <p className="text-gray-400 text-sm">
-            Copyright © 2025 World Wide Tours and Travel
+            Copyright © 2025 World Wide Tours and Travel Ltd.
           </p>
 
           {/* Social Media Icons */}
