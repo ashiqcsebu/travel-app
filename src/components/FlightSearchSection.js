@@ -18,9 +18,9 @@ import { LuPlane } from "react-icons/lu";
 export default function FlightSearchSection() {
   return (
     <div>
-      <div className="relative z-20 px-4 -mt-24">
+      <div className="relative z-20 px-4 -mt-16">
         <div className="max-w-6xl mx-auto relative">
-          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-30">
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-30">
             <div className="flex space-x-4 rounded-xl">
               {[
                 { icon: <FaPlane />, label: "Flights", active: true },

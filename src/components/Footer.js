@@ -14,7 +14,7 @@ import img4 from "../asset/img4.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#041E42] text-white">
+    <footer className="bg-[#041E42] text-white w-full">
       {/* Certifications Section - Top and Centered */}
       <div
         className="text-center py-4 "
