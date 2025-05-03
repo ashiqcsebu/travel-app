@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <>
       <TopBar />
-      <div className="font-sans">
+      <div className="font-sans overflow-x-hidden">
         {/* Full Screen Hero Banner */}
         <div
           className="relative w-full h-[80vh] bg-cover bg-center bg-no-repeat"
